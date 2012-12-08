@@ -1,4 +1,4 @@
-.labitem{float:left;border-top:10px solid #333;}
+.labitem{float:left;border-top:10px solid #333;width:100%;}
 .labitem:first{float:left;}
 .labitem .lang{float:left;}
 .labitem header{float:left;border-right:3px dotted #333;padding-right:1%;width:200px;}
