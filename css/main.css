@@ -16,12 +16,12 @@ body {
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #ccc;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #ccc;
     text-shadow: none;
 }
 
@@ -70,22 +70,22 @@ body {
 }
 
 /* ===================
-    ALL: Orange Theme
+    thenonameguy : Tron-like Custom Theme
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 10px solid #18cae6;
 }
 
 .footer-container,
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 20px solid #18cae6;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    background: #111;
 }
 
 .title {
