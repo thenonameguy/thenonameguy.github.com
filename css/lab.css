@@ -1,0 +1,4 @@
+.labitem{float:left;border-top:10px solid #333;}
+.labitem .lang{float:left;}
+.labitem header{float:left;border-right:3px dotted #333;padding-right:1%;width:36%;}
+.code{background:#FF9900;text-decoration:none;color:#222;display:block;width:50%;text-align:center;border-radius:10px;border:1px solid black;}

@@ -108,6 +108,7 @@ nav a {
 
     text-align: center;
     text-decoration: none;
+	text-shadow:2px 2px #222;
     font-weight: bold;
 
     color: white;
