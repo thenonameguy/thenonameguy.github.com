@@ -35,47 +35,36 @@
 
                 <article>
                     <header>
-                        <h1>Why I choose Vim as my editor</h1>
-						<p>My classmates are often confused with my terminal lifestyle, so I dedicate this small article to them, explaining my views.</p>
+                        <h1>Project #1: A data structure a day</h1>
+						<p>Starting tommorow, I will implement a basic data-structure a day in C++ for the sake of learning the pointers and the language.
                     </header>
                     <section>
-					<h2>Pros:</h2>
-					<ul>
-						<li>If you really know what you want to do and how, Vim won't hold you back</li>
-						<li>Programmable text-editing</li>
-						<li>The simplicity of the interface gives it limitless expandability.</li>
-						<li>Constantly developed by millions of great devs worldwide.</li>
-						<li>Open-source, if you don't like something, change it! (VS 2010, I'm looking at you)</li>
-					</ul>
-					<h2>Cons:</h2>
-					<ul>
-						<li>Steep learning curve (months/years)</li>
-						<li>Too many commands at first</li>
-						<li><code>let girlfriendcount = 0</code></li>
+					<p>The first will be probably the stack, as it's the simplest. I will use OOP and test-based development extensively.Also, I will demonstrate the concepts of these here, in my blog.</p>
+					<p>I recommend this "let's do X a day"-method of learning, in the past, this made me learn new concepts and paradigms fast and relativily fun.If someone wants to follow me with this process in another language, say C# or Javasript, feel welcome, I would appreciate it.</p>
                     </section>
-                    <footer>
-					<h2>I advise you to use Vim if you:</h2>
-					<ul>
-						<li>are serious about development in long-term</li>
-						<li>want to write more in less time</li>
-						<li>are tired of using the mouse</li>
-						<li>love learning things, that are hard, but after you master them, give you god-like powers.</li>
-					</ul>
-					If you are still not convinced:<br>
-					<code>
-						$~: vimtutor
-					</code>
-                    </footer>
+                    <section>
+					<h2>A typical high-schoolers first question - why should I care?</h2>
+					You possibly have written programs which use arrays in the past. These give you the so called fast-random-acces(you can say [10] and it gets the 10th element from it -many "programmers" take this for granted-), and have fast insertion at the end of the array.
+					These properties are ideal for text-processing and many linear problems, where you need to append something to a list of values (most string types use array's as an internal container, so adding two strings together (concatenating) is as efficient as possible).<br>
+					<b>BUT:</b><br>
+					What if I want to, say make a game, where I want to do the collision detection between the player and the objects around him/her?<br>
+					Sure, I could just put every game object in an array and iterate through it, but this is a naive implementation and is O(n) complexity(For those who don't know: This is called Big-O-notation: where n is the game objects count, so n=10 takes x time and n=100 takes 10x time), and it can be enough to simple webdev, but not so for the programmer who gets hired at Google or Dropbox. He thinks "How could I make this more efficient?"; after thinking about the problem for a while he simplifies the problem to checking the small promixity of the player. This means we check the game objects place in the gamespace. This, again, is O(n), because we NEED to iterate over all of the elements, if we store them in an array.<br>
+					<p>Here comes our hero, The Almighty  <a href="http://en.wikipedia.org/wiki/Quadtree">Quadtree</a>! 
+					This in fact is a pretty complex data-structure, but you can see from the Wiki article, that it simplifies our problem to O(1) (constant time - in ideal circumstances), because we only need to check those elements whose are in the quad in which the player is located.
+					</p>
+                    </section>
+					<footer>
+					I got little bit carried away with this particular problem, but you can see, that learning data structures will pay off in the long run. See you tomorrow with the <a href="http://en.wikipedia.org/wiki/Stack_%28abstract_data_type%29">Stack</a>!
+					</footer>
                 </article>
 
                 <aside>
-                    <h3>My favourite Vim plugins:</h3>
-					Snipmate,Ctags,syntastic,vim-powerline
-					<h3>Useful not-so-well-known commands:</h3>
-					Indent current file properly: gg(Shift+V)G=<br><hr>
-					Insert newline over the current and switch to Insert mode: O<br><hr>
-					Move to last character on the current line and switch to Insert mode: A<br>
+                    <h3>Things needed for implementing data structures in C++:</h3>
+					Knowledge of OOP and pointers, and a good deal of tolerancy for SEGFAULT's :D					
+					<h3>Some compensation for this humbly-mumbly-tech-talk:</h3>
+					<img src="http://imgs.xkcd.com/comics/1_to_10.png" alt="If you get an 11/100 on a CS test, but you claim it should be counted as a 3, they'll probably decide you deserve the upgrade."/>
                 </aside>
+				Previous article's archive:<a href="http://htmlpreview.github.com/?https://github.com/thenonameguy/thenonameguy.github.com/blob/dbd53ac343e84aa0cff266eb0b2ecada09c31046/index.html">Archive</a>
 				    <div id="disqus_thread"></div>
         <script type="text/javascript">
             /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
