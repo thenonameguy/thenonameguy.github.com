@@ -15,19 +15,6 @@
             <script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
         <![endif]-->
 
-		<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36932310-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
     </head>
     <body>
 
@@ -50,40 +37,36 @@
                 <article>
                     <header>
                         <h1>Project #1: A data structure a day</h1>
-						<p>Starting tommorow, I will implement a basic data-structure a day in C++ for the sake of learning the pointers and the language.
+						<h2>Day #1:</h2>
+						So today's the first day of the big "let's make shit happen" week, starting with a simple linked list based stack implementation was a great warmup, let's see what I learned.
                     </header>
                     <section>
-					<p>The first will be probably the stack, as it's the simplest. I will use OOP and test-based development extensively.Also, I will demonstrate the concepts of these here, in my blog.</p>
-					<p>I recommend this "let's do X a day"-method of learning, in the past, this made me learn new concepts and paradigms fast and relativily fun.If someone wants to follow me with this process in another language, say C# or Javasript, feel welcome, I would appreciate it.</p>
+					This article won't be as long as it's supposed to be, because the simplicity of the DS (data structure). 
+					<h2>3 things every programmer should know about stacks:</h2>
+					<ul>
+						<li>Basic LIFO data structure, implemented in hardware in a great deal of processors</li>
+						<li>Every operation is O(1), no matter the case</li>
+						<li>2 implementation exists: array-based and list-based (first has stack overflow issues)</li>
+					</ul>
                     </section>
                     <section>
-					<h2>A typical high-schoolers first question:<br>Why should I care?</h2>
-					You possibly have written programs which use arrays in the past. These give you the so called fast-random-access(you can say [10] and it gets the 10th element from it -many "programmers" take this for granted-), and have fast insertion at the end of the array.
-					These properties are ideal for text-processing and many linear problems, where you need to append something to a list of values (most string types use array's as an internal container, so adding two strings together (concatenating) is as efficient as possible).<br>
-					<b>BUT:</b><br>
-					What if I want to, say make a game, where I want to do the collision detection between the player and the objects around him/her?<br>
-					Sure, I could just put every game object in an array and iterate through it, but this is a naive implementation and is O(n) complexity(For those who don't know: This is called Big-O-notation: where n is the game objects count, so n=10 takes x time and n=100 takes 10x time), and it can be enough to simple webdev, but not so for the programmer who gets hired at Google or Dropbox. He thinks "How could I make this more efficient?"; after thinking about the problem for a while he simplifies the problem to checking the small promixity of the player. This means we check the game objects place in the gamespace. This, again, is O(n), because we NEED to iterate over all of the elements, if we store them in an array.<br>
-					<p>Here comes our hero, The Almighty  <a href="http://en.wikipedia.org/wiki/Quadtree">Quadtree</a>! 
-					This in fact is a pretty complex data-structure, but you can see from the Wiki article, that it simplifies our problem to O(1) (constant time - in ideal circumstances), because we only need to check those elements whose are in the quad in which the player is located.
-					</p>
+					I have nothing more to say, so let the code speak! On the project page you can access the proper repository.Check the source, I made the implementation so trivial that every C-based language programmer <i>should</i> understand it.
                     </section>
 					<footer>
-					I got little bit carried away with this particular problem, but you can see, that learning data structures will pay off in the long run. See you tomorrow with the <a href="http://en.wikipedia.org/wiki/Stack_%28abstract_data_type%29">Stack</a>!
+					Tomorrow we will implement stack's complete opposite, the FIFO <a href="http://en.wikipedia.org/wiki/Queue_%28abstract_data_type%29">Queue</a>, he is the polite all-knowing englishman of data structures, his power lies in it's simplicity.(A* path-finding, I'm slowly getting closer)
 					</footer>
                 </article>
-
                 <aside>
                     <h3>Things needed for implementing data structures in C++:</h3>
 					Knowledge of OOP and pointers, and a good deal of tolerancy for SEGFAULT's :D					
-					<h3>Some compensation for this humbly-mumbly-tech-talk:</h3>
-					<img src="http://imgs.xkcd.com/comics/1_to_10.png" alt="If you get an 11/100 on a CS test, but you claim it should be counted as a 3, they'll probably decide you deserve the upgrade."/><br>
-				Previous article's archive: <a href="http://htmlpreview.github.com/?https://github.com/thenonameguy/thenonameguy.github.com/blob/dbd53ac343e84aa0cff266eb0b2ecada09c31046/index.html">Archive</a>
+					<h3>Recommend a good use of queues in the comment section below!</h3>
+				Previous article's archive: <a href="http://htmlpreview.github.com/?https://github.com/thenonameguy/thenonameguy.github.com/blob/c7a6a2aeb24672167da32a6f4efb87027692b3ea/index.html">Archive</a>
                 </aside>
 				    <div id="disqus_thread"></div>
         <script type="text/javascript">
             /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
             var disqus_shortname = 'thenonameguy'; // required: replace example with your forum shortname
-			var disqus_identifier="project1st"; //CHANGE THIS IF NEW ARTICLE
+			var disqus_identifier="project1st1stday"; //CHANGE THIS IF NEW ARTICLE
 
             /* * * DON'T EDIT BELOW THIS LINE * * */
             (function() {
