@@ -114,10 +114,6 @@ display:block;
 
 #currentnav{background:white;color:black;text-shadow:none;}
 
-/* ==============
-    MOBILE: Menu
-   ============== */
-
 nav ul {
     margin: 0;
     padding: 0;
@@ -134,7 +130,7 @@ nav a {
     font-weight: bold;
 
     color: white;
-    background: #080808;
+	background:#1b1b1b;
 }
 
 nav a:hover,
