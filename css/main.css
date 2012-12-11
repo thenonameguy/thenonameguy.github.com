@@ -56,10 +56,6 @@ textarea {
 }
 
 
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   ========================================================================== */
-
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
 }
@@ -92,6 +88,22 @@ body {
     color: white;
 	text-decoration:none;
 }
+#prevlink{ background: none repeat scroll 0 0 #E3E3E3;
+    border: 1px solid #BBBBBB;
+    border-radius: 3px;
+	color:#222;
+    padding: 8px 0 9px;
+	text-decoration: none;
+    text-align: center;
+display:block;
+    text-shadow: 1px 1px 0 #BBB;
+    }
+
+#prevlink:hover{
+ text-decoration:underline;
+}
+
+#currentnav{background:white;color:black;text-shadow:none;}
 
 /* ==============
     MOBILE: Menu
@@ -160,17 +172,6 @@ nav a:hover {
    ========================================================================== */
 
 iframe{margin-top:5%;padding-top:10px;border-top:3px solid #FFBF00 !important;}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
