@@ -13,6 +13,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
+	moz-hyphens:auto;
 }
 
 ::-moz-selection {
@@ -87,6 +88,14 @@ body {
 .header-container header h1 a,.header-container header h1{
     color: white;
 	text-decoration:none;
+}
+aside a,aside a:visited
+{
+	color:#09B;
+}
+aside a:hover
+{
+	color:#18cae6;
 }
 #prevlink{ background: none repeat scroll 0 0 #E3E3E3;
     border: 1px solid #BBBBBB;
