@@ -37,36 +37,31 @@
                 <article>
                     <header>
                         <h1>Project #1: A data structure a day</h1>
-						<h2>Day #2:</h2>
-						Second day, Queue just finished, I had a minor fight with C++ over includes, but nothing too hard. 
+						<h2>Day #3: Doubly linked list</h2>
+						Day-to-day the challenges get bigger, the data structures get more complicated, but I will try my best to publish the new articles before 9PM (GMT+1)
                     </header>
-                    <section>
-						So what's a Queue? If you want a through explanation, you should see through the <a href="http://en.wikipedia.org/wiki/Queue_%28abstract_data_type%29">Wikipedia article</a> about it. If you're too lazy, then here's a quick rundown:
-						<ul>
-							<li>FIFO(First In First Out) data structure</li>
-							<li>O(1) insertion and removal</li>
-							<li>Modelled after shopping mall line/red light cars situations</li>
-						</ul>
-						Think of it like this with a linked list implementation:<br>
-						<img src="http://i.imgur.com/I9OZC.png" alt="Queue description" width="100%"/>
-						The code is - as always - in the Projects page, feel free to dig through it, I think I kept it simple, not using any hard syntax.(Though there may be memory leaks, if so, I'm fixing them in the future)
+					<section>
+					Today I implemented the <a href="http://en.wikipedia.org/wiki/Doubly_linked_list">doubly linked list</a>, with a small twist, there's no random-access, rather I made it like a two-ended stack, you can push and pop at the two ends. With some clever algorithms, this DS could make for a great median-finding with many additions/removals. (We have O(1) addition and removal on both ends, and we could get a median with some small changes wiht O(n/2).<br>
+					Think of the doubly linked list like this(Picture found on google, not my own):<br>
+					<img src="http://ompldr.org/vZ28xdQ" width="100%">
 					</section>
 					<footer>
-						Tomorrow we are going to implement something that I've used extensively before (linked list) with a twist: the <a href="http://en.wikipedia.org/wiki/Doubly_linked_list">Doubly linked list</a>! See you later!
+					I'm pretty tired now, I've played with my PS Move a bit, fiddling around with freeglut, maybe I'll push it up into the lab in the next few days.<br>
+					Tomorrow I will implement the <a href="http://en.wikipedia.org/wiki/Hash_table">Hash table</a>, she isn't an easy one!
 					</footer>
                 </article>
                 <aside>
                     <h3>Things needed for implementing data structures in C++:</h3>
 					Knowledge of OOP and pointers, and a good deal of tolerancy for SEGFAULT's :D<hr>
-					<h3>Thanks for the tips for minor changes in design from the great minds of <a href="http://www.reddit.com/r/userexperience">/userexperiene</a>!</h3>
-					<div id="prevart"><a id="prevlink" href="http://htmlpreview.github.com/?https://github.com/thenonameguy/thenonameguy.github.com/blob/5d9c66a39e2e4df8e6f7d4ee72f0524ea3ec2142/index.html"><i class="icon-step-backward"></i> Previous article</a>
+					<h3>Feel free to comment in the comment section below!</h3>
+					<div id="prevart"><a id="prevlink" href="http://htmlpreview.github.com/?https://github.com/thenonameguy/thenonameguy.github.com/blob/caa003b464f33dd60efc03ffd4a1062cfab56f5a/index.html"><i class="icon-step-backward"></i> Previous article</a>
 					</div>
                 </aside>
 				    <div id="disqus_thread"></div>
         <script type="text/javascript">
             /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
             var disqus_shortname = 'thenonameguy'; // required: replace example with your forum shortname
-			var disqus_identifier="project1st2ndday"; //CHANGE THIS IF NEW ARTICLE
+			var disqus_identifier="project1st3rdday"; //CHANGE THIS IF NEW ARTICLE
 
             /* * * DON'T EDIT BELOW THIS LINE * * */
             (function() {
